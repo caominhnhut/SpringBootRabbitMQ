@@ -1,0 +1,22 @@
+spring:
+  application:
+    name: spring-boot-kafka
+
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: user
+    password: password
+
+rabbitmq:
+  queue:
+    test: test_queue
+
+logging:
+  level:
+    root: info
+    com.sts: info
+    org.springframework.web: info
+    org.springframework.amqp: info
+  pattern:
+    console: "%d{yyyy-MM-dd HH:mm:ss} %-5level %logger{36} [%file:%line] - %msg%n"
